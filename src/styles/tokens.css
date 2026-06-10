@@ -1,0 +1,19 @@
+:root {
+  /* color */
+  --hds-color-primary: #0b6bcb;
+  --hds-color-on-primary: #ffffff;
+  --hds-color-border: #c7ccd1;
+  --hds-color-text: #1a1d20;
+  --hds-color-bg: #ffffff;
+
+  /* radius */
+  --hds-radius-md: 6px;
+
+  /* spacing */
+  --hds-space-1: 0.25rem;
+  --hds-space-2: 0.5rem;
+  --hds-space-3: 0.75rem;
+
+  /* typography */
+  --hds-font-size-md: 1rem;
+}

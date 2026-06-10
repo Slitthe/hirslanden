@@ -1,0 +1,4 @@
+{
+  "ignoreRules": ["no-resolution", "cjs-resolves-to-esm"],
+  "excludeEntrypoints": ["./styles/tokens.css"]
+}

@@ -1,0 +1,20 @@
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--hds-space-1, 0.25rem);
+}
+
+.label {
+  font: inherit;
+  color: var(--hds-color-text, #1a1d20);
+}
+
+.input {
+  font: inherit;
+  font-size: var(--hds-font-size-md, 1rem);
+  padding: var(--hds-space-2, 0.5rem);
+  border: 1px solid var(--hds-color-border, #c7ccd1);
+  border-radius: var(--hds-radius-md, 6px);
+  background: var(--hds-color-bg, #ffffff);
+  color: var(--hds-color-text, #1a1d20);
+}

@@ -1,0 +1,20 @@
+.button {
+  font: inherit;
+  font-size: var(--hds-font-size-md, 1rem);
+  cursor: pointer;
+  border-radius: var(--hds-radius-md, 6px);
+  padding: var(--hds-space-2, 0.5rem) var(--hds-space-3, 0.75rem);
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.primary {
+  background: var(--hds-color-primary, #0b6bcb);
+  color: var(--hds-color-on-primary, #ffffff);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--hds-color-primary, #0b6bcb);
+  border-color: var(--hds-color-primary, #0b6bcb);
+}
