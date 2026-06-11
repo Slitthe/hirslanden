@@ -1,0 +1,27 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--hds-space-1, 0.25rem);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--hds-color-strong, #1a1a1a);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--hds-color-muted, #6b7280);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--hds-color-strong, #1a1a1a);
+  outline-offset: 2px;
+}
+
+.icon {
+  display: inline-flex;
+}

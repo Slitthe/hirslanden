@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hds-space-2, 0.5rem);
+}
+
+.label {
+  font-size: var(--hds-font-size-sm, 0.875rem);
+  color: var(--hds-color-muted, #6b7280);
+}
+
+.track {
+  height: 3px;
+  background: var(--hds-color-track, #e5e7eb);
+  border-radius: var(--hds-radius-sm, 4px);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--hds-color-strong, #1a1a1a);
+}

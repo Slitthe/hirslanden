@@ -1,0 +1,54 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--hds-space-4, 1rem);
+  width: 100%;
+  text-align: left;
+  padding: var(--hds-space-4, 1rem);
+  background: var(--hds-color-bg, #ffffff);
+  border: 1px solid var(--hds-color-border, #c7ccd1);
+  border-radius: var(--hds-radius-md, 6px);
+  font: inherit;
+  color: var(--hds-color-text, #1a1d20);
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: var(--hds-color-strong, #1a1a1a);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--hds-color-strong, #1a1a1a);
+  outline-offset: 2px;
+}
+
+.card[data-selected="true"] {
+  border-color: var(--hds-color-strong, #1a1a1a);
+  box-shadow: inset 0 0 0 1px var(--hds-color-strong, #1a1a1a);
+}
+
+.card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.media {
+  flex-shrink: 0;
+  display: inline-flex;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hds-space-1, 0.25rem);
+}
+
+.title {
+  font-weight: var(--hds-font-weight-bold, 700);
+  color: var(--hds-color-strong, #1a1a1a);
+}
+
+.description {
+  font-size: var(--hds-font-size-sm, 0.875rem);
+  color: var(--hds-color-muted, #6b7280);
+}

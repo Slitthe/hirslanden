@@ -1,0 +1,37 @@
+.item {
+  border-bottom: 1px solid var(--hds-color-border, #c7ccd1);
+}
+
+.heading {
+  margin: 0;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--hds-space-4, 1rem);
+  width: 100%;
+  padding: var(--hds-space-4, 1rem) 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  color: var(--hds-color-strong, #1a1a1a);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--hds-color-strong, #1a1a1a);
+  outline-offset: 2px;
+}
+
+.title {
+  font-weight: var(--hds-font-weight-medium, 500);
+}
+
+.panelInner {
+  padding-bottom: var(--hds-space-4, 1rem);
+  color: var(--hds-color-text, #1a1d20);
+  line-height: var(--hds-line-height-normal, 1.6);
+}

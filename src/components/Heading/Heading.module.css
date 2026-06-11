@@ -1,0 +1,18 @@
+.heading {
+  margin: 0;
+  font-weight: var(--hds-font-weight-bold, 700);
+  line-height: var(--hds-line-height-tight, 1.2);
+  color: var(--hds-color-strong, #1a1a1a);
+}
+
+.level1 {
+  font-size: var(--hds-font-size-2xl, 2.25rem);
+}
+
+.level2 {
+  font-size: var(--hds-font-size-xl, 1.75rem);
+}
+
+.level3 {
+  font-size: var(--hds-font-size-lg, 1.25rem);
+}

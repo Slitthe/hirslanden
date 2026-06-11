@@ -16,13 +16,69 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
+    "./accordion": {
+      "types": "./dist/components/Accordion/index.d.ts",
+      "import": "./dist/components/Accordion/index.js"
+    },
     "./button": {
       "types": "./dist/components/Button/index.d.ts",
       "import": "./dist/components/Button/index.js"
     },
+    "./callout": {
+      "types": "./dist/components/Callout/index.d.ts",
+      "import": "./dist/components/Callout/index.js"
+    },
+    "./card": {
+      "types": "./dist/components/Card/index.d.ts",
+      "import": "./dist/components/Card/index.js"
+    },
+    "./divider": {
+      "types": "./dist/components/Divider/index.d.ts",
+      "import": "./dist/components/Divider/index.js"
+    },
+    "./heading": {
+      "types": "./dist/components/Heading/index.d.ts",
+      "import": "./dist/components/Heading/index.js"
+    },
+    "./icon": {
+      "types": "./dist/components/Icon/index.d.ts",
+      "import": "./dist/components/Icon/index.js"
+    },
+    "./infocard": {
+      "types": "./dist/components/InfoCard/index.d.ts",
+      "import": "./dist/components/InfoCard/index.js"
+    },
     "./input": {
       "types": "./dist/components/Input/index.d.ts",
       "import": "./dist/components/Input/index.js"
+    },
+    "./list": {
+      "types": "./dist/components/List/index.d.ts",
+      "import": "./dist/components/List/index.js"
+    },
+    "./optiongroup": {
+      "types": "./dist/components/OptionGroup/index.d.ts",
+      "import": "./dist/components/OptionGroup/index.js"
+    },
+    "./overline": {
+      "types": "./dist/components/Overline/index.d.ts",
+      "import": "./dist/components/Overline/index.js"
+    },
+    "./riskscale": {
+      "types": "./dist/components/RiskScale/index.d.ts",
+      "import": "./dist/components/RiskScale/index.js"
+    },
+    "./stepprogress": {
+      "types": "./dist/components/StepProgress/index.d.ts",
+      "import": "./dist/components/StepProgress/index.js"
+    },
+    "./text": {
+      "types": "./dist/components/Text/index.d.ts",
+      "import": "./dist/components/Text/index.js"
+    },
+    "./textlink": {
+      "types": "./dist/components/TextLink/index.d.ts",
+      "import": "./dist/components/TextLink/index.js"
     },
     "./styles/tokens.css": "./dist/styles/tokens.css",
     "./package.json": "./package.json"
