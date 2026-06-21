@@ -6,19 +6,21 @@
   padding: 0;
   border: 0;
   background: none;
-  font: inherit;
-  color: var(--hds-color-strong, #1a1a1a);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
+  font-size: inherit;
+  color: var(--hds-color-primary, #0094d4);
+  text-decoration: none;
   cursor: pointer;
 }
 
 .link:hover {
-  color: var(--hds-color-muted, #6b7280);
+  color: var(--hds-color-primary-hover, #0072a3);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .link:focus-visible {
-  outline: 2px solid var(--hds-color-strong, #1a1a1a);
+  outline: 2px solid var(--hds-color-primary, #0094d4);
   outline-offset: 2px;
 }
 

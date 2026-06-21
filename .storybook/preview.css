@@ -1,0 +1,6 @@
+body,
+.sb-show-main,
+.docs-story {
+  font-family: var(--hds-font-family);
+  color: var(--hds-color-text);
+}

@@ -1,5 +1,5 @@
 .item {
-  border-bottom: 1px solid var(--hds-color-border, #c7ccd1);
+  border-bottom: 1px solid var(--hds-color-border, #e7e4e2);
 }
 
 .heading {
@@ -15,23 +15,23 @@
   padding: var(--hds-space-4, 1rem) 0;
   background: none;
   border: 0;
-  font: inherit;
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
   text-align: left;
   cursor: pointer;
-  color: var(--hds-color-strong, #1a1a1a);
+  color: var(--hds-color-strong, #534c46);
 }
 
 .trigger:focus-visible {
-  outline: 2px solid var(--hds-color-strong, #1a1a1a);
+  outline: 2px solid var(--hds-color-primary, #0094d4);
   outline-offset: 2px;
 }
 
 .title {
-  font-weight: var(--hds-font-weight-medium, 500);
+  font-weight: var(--hds-font-weight-bold, 700);
 }
 
 .panelInner {
   padding-bottom: var(--hds-space-4, 1rem);
-  color: var(--hds-color-text, #1a1d20);
+  color: var(--hds-color-text, #534c46);
   line-height: var(--hds-line-height-normal, 1.6);
 }

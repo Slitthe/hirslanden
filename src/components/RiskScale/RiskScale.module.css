@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--hds-space-2, 0.5rem);
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
 }
 
 .header {
@@ -14,38 +15,38 @@
   font-size: var(--hds-font-size-xs, 0.75rem);
   letter-spacing: var(--hds-letter-spacing-wide, 0.08em);
   text-transform: uppercase;
-  color: var(--hds-color-muted, #6b7280);
+  color: var(--hds-color-muted, #938880);
 }
 
 .value {
   font-weight: var(--hds-font-weight-bold, 700);
-  color: var(--hds-color-strong, #1a1a1a);
+  color: var(--hds-color-strong, #534c46);
 }
 
 .scale {
   display: flex;
-  gap: 4px;
+  gap: var(--hds-space-1, 0.25rem);
 }
 
 .segment {
   flex: 1;
   height: 28px;
-  background: var(--hds-color-track, #e5e7eb);
-  border-radius: var(--hds-radius-sm, 4px);
+  background: var(--hds-color-track, #ede9e7);
+  border-radius: var(--hds-radius-sm, 2px);
 }
 
 .segment[data-active="true"] {
-  background: var(--hds-color-strong, #1a1a1a);
+  background: var(--hds-color-primary, #0094d4);
 }
 
 .labels {
   display: flex;
-  gap: 4px;
+  gap: var(--hds-space-1, 0.25rem);
 }
 
 .segmentLabel {
   flex: 1;
   font-size: var(--hds-font-size-xs, 0.75rem);
-  color: var(--hds-color-muted, #6b7280);
+  color: var(--hds-color-muted, #938880);
   text-align: center;
 }

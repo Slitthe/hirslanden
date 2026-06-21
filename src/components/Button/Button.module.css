@@ -1,20 +1,45 @@
 .button {
-  font: inherit;
-  font-size: var(--hds-font-size-md, 1rem);
-  cursor: pointer;
-  border-radius: var(--hds-radius-md, 6px);
-  padding: var(--hds-space-2, 0.5rem) var(--hds-space-3, 0.75rem);
-  border: 1px solid transparent;
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
+  font-size: var(--hds-font-size-md, 0.875rem);
+  font-weight: var(--hds-font-weight-bold, 700);
   line-height: 1.2;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: var(--hds-radius-none, 0);
+  padding: var(--hds-space-3, 0.75rem) var(--hds-space-5, 1.5rem);
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+/* Large / CTA size — 18px, matching the prominent buttons on hirslanden.ch.
+   (`md` is the base size defined on `.button` above.) */
+.lg {
+  font-size: 1.125rem;
+  padding: 1.125rem var(--hds-space-5, 1.5rem);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--hds-color-primary, #0094d4);
+  outline-offset: 2px;
 }
 
 .primary {
-  background: var(--hds-color-primary, #0b6bcb);
+  background: var(--hds-color-primary, #0094d4);
   color: var(--hds-color-on-primary, #ffffff);
+}
+
+.primary:hover {
+  background: var(--hds-color-primary-hover, #0072a3);
 }
 
 .secondary {
   background: transparent;
-  color: var(--hds-color-primary, #0b6bcb);
-  border-color: var(--hds-color-primary, #0b6bcb);
+  color: var(--hds-color-primary, #0094d4);
+  border-color: var(--hds-color-primary, #0094d4);
+}
+
+.secondary:hover {
+  background: var(--hds-color-primary-soft, rgba(0, 148, 212, 0.1));
 }

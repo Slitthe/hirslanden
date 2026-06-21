@@ -1,13 +1,16 @@
 .card {
   background: var(--hds-color-bg, #ffffff);
-  border: 1px solid var(--hds-color-border, #c7ccd1);
-  border-radius: var(--hds-radius-md, 6px);
-  color: var(--hds-color-text, #1a1d20);
+  border: 1px solid var(--hds-color-border, #e7e4e2);
+  border-radius: var(--hds-radius-md, 2px);
+  box-shadow: var(--hds-shadow-card, none);
+  color: var(--hds-color-text, #534c46);
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
 }
 
 .card[data-variant="dashed"] {
   border-style: dashed;
-  border-color: var(--hds-color-border-dashed, #c7ccd1);
+  border-color: var(--hds-color-border-dashed, #e7e4e2);
+  box-shadow: none;
 }
 
 .card[data-padding="none"] {

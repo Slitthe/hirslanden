@@ -1,9 +1,9 @@
-import { copyFile, mkdir } from 'node:fs/promises'
-import { dirname } from 'node:path'
+import { cp } from 'node:fs/promises'
 
-const src = 'src/styles/tokens.css'
-const dest = 'dist/styles/tokens.css'
+// Copy the whole styles dir verbatim (tokens.css, fonts.css, fonts/*.woff2) so the
+// shipped tokens.css @import './fonts.css' and its url('./fonts/...') resolve in dist.
+const src = 'src/styles'
+const dest = 'dist/styles'
 
-await mkdir(dirname(dest), { recursive: true })
-await copyFile(src, dest)
+await cp(src, dest, { recursive: true })
 console.log(`Copied ${src} -> ${dest}`)

@@ -1,14 +1,15 @@
 .text {
   margin: 0;
-  font-size: var(--hds-font-size-md, 1rem);
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
+  font-size: var(--hds-font-size-md, 0.875rem);
   line-height: var(--hds-line-height-normal, 1.6);
-  color: var(--hds-color-text, #1a1d20);
+  color: var(--hds-color-text, #534c46);
 }
 
 .text[data-size="sm"] {
-  font-size: var(--hds-font-size-sm, 0.875rem);
+  font-size: var(--hds-font-size-sm, 0.8125rem);
 }
 
 .text[data-tone="muted"] {
-  color: var(--hds-color-muted, #6b7280);
+  color: var(--hds-color-muted, #938880);
 }

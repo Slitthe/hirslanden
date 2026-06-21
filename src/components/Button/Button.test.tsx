@@ -15,6 +15,16 @@ test('reflects the variant via data-variant', () => {
   )
 })
 
+test('reflects the size via data-size', () => {
+  render(<Button size="lg">Big</Button>)
+  expect(screen.getByRole('button', { name: 'Big' })).toHaveAttribute('data-size', 'lg')
+})
+
+test('defaults size to "md"', () => {
+  render(<Button>Default</Button>)
+  expect(screen.getByRole('button', { name: 'Default' })).toHaveAttribute('data-size', 'md')
+})
+
 test('calls onClick when clicked', async () => {
   const onClick = vi.fn()
   render(<Button onClick={onClick}>Go</Button>)

@@ -5,16 +5,24 @@
 }
 
 .label {
-  font: inherit;
-  color: var(--hds-color-text, #1a1d20);
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
+  font-size: var(--hds-font-size-sm, 0.8125rem);
+  color: var(--hds-color-text, #534c46);
 }
 
 .input {
-  font: inherit;
-  font-size: var(--hds-font-size-md, 1rem);
-  padding: var(--hds-space-2, 0.5rem);
-  border: 1px solid var(--hds-color-border, #c7ccd1);
-  border-radius: var(--hds-radius-md, 6px);
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
+  font-size: var(--hds-font-size-md, 0.875rem);
+  padding: var(--hds-space-2, 0.5rem) var(--hds-space-3, 0.75rem);
+  border: 1px solid var(--hds-color-border, #e7e4e2);
+  border-radius: var(--hds-radius-md, 2px);
   background: var(--hds-color-bg, #ffffff);
-  color: var(--hds-color-text, #1a1d20);
+  color: var(--hds-color-text, #534c46);
+}
+
+.input:focus-visible,
+.input:focus {
+  outline: none;
+  border-color: var(--hds-color-primary, #0094d4);
+  box-shadow: 0 0 0 3px var(--hds-color-primary-soft, rgba(0, 148, 212, 0.1));
 }

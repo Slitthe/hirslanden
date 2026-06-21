@@ -1,22 +1,32 @@
+@import "./fonts.css";
+
 :root {
-  /* color */
-  --hds-color-primary: #0b6bcb;
+  /* ── Brand & color (hirslanden.ch) ───────────────────────────── */
+  --hds-color-primary: #0094d4; /* azure brand */
+  --hds-color-primary-hover: #0072a3; /* darker azure for hover/active */
+  --hds-color-primary-soft: rgba(0, 148, 212, 0.1); /* tint wash for selected/hover */
   --hds-color-on-primary: #ffffff;
-  --hds-color-border: #c7ccd1;
-  --hds-color-text: #1a1d20;
+
+  --hds-color-text: #534c46; /* warm dark taupe — body text */
+  --hds-color-strong: #534c46; /* headings — warm taupe */
+  --hds-color-muted: #938880; /* warm muted greige — labels/secondary */
   --hds-color-bg: #ffffff;
-  --hds-color-muted: #6b7280;
-  --hds-color-strong: #1a1a1a;
-  --hds-color-track: #e5e7eb;
-  --hds-color-surface-subtle: #f5f5f5;
-  --hds-color-border-dashed: #c7ccd1;
-  --hds-color-accent-bar: #1a1a1a;
 
-  /* radius */
-  --hds-radius-sm: 4px;
-  --hds-radius-md: 6px;
+  --hds-color-border: #e7e4e2; /* warm light greige */
+  --hds-color-border-dashed: #e7e4e2;
+  --hds-color-track: #ede9e7; /* warm light track (scales/progress) */
+  --hds-color-surface-subtle: #f7f5f4; /* warm off-white surface */
+  --hds-color-accent-bar: #0094d4; /* callout accent bar → azure */
 
-  /* spacing */
+  /* ── Radius (sharp / square to match live) ───────────────────── */
+  --hds-radius-none: 0; /* buttons */
+  --hds-radius-sm: 0;
+  --hds-radius-md: 0;
+
+  /* ── Elevation ───────────────────────────────────────────────── */
+  --hds-shadow-card: none; /* flat — matches live teaser cards */
+
+  /* ── Spacing ─────────────────────────────────────────────────── */
   --hds-space-1: 0.25rem;
   --hds-space-2: 0.5rem;
   --hds-space-3: 0.75rem;
@@ -24,17 +34,24 @@
   --hds-space-5: 1.5rem;
   --hds-space-6: 2rem;
 
-  /* typography */
-  --hds-font-size-xs: 0.75rem;
-  --hds-font-size-sm: 0.875rem;
-  --hds-font-size-md: 1rem;
-  --hds-font-size-lg: 1.25rem;
-  --hds-font-size-xl: 1.75rem;
-  --hds-font-size-2xl: 2.25rem;
+  /* ── Typography ──────────────────────────────────────────────── */
+  --hds-font-family: "Metropolis", Arial, sans-serif;
+
+  /* scale matches live site: body 14px · H3 22 · H2 34 · H1 42 */
+  --hds-font-size-xs: 0.75rem; /* 12px */
+  --hds-font-size-sm: 0.8125rem; /* 13px */
+  --hds-font-size-md: 0.875rem; /* 14px — body base */
+  --hds-font-size-lg: 1.375rem; /* 22px — Heading level 3 */
+  --hds-font-size-xl: 2.125rem; /* 34px — Heading level 2 */
+  --hds-font-size-2xl: 2.625rem; /* 42px — Heading level 1 */
+
   --hds-font-weight-regular: 400;
   --hds-font-weight-medium: 500;
   --hds-font-weight-bold: 700;
+
   --hds-letter-spacing-wide: 0.08em;
-  --hds-line-height-tight: 1.2;
-  --hds-line-height-normal: 1.6;
+
+  --hds-line-height-tight: 1.2; /* labels / overline */
+  --hds-line-height-heading: 1.4; /* headings (live ≈1.43) */
+  --hds-line-height-normal: 1.6; /* body copy */
 }

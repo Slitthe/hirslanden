@@ -1,9 +1,10 @@
 .overline {
   display: block;
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
   font-size: var(--hds-font-size-xs, 0.75rem);
   font-weight: var(--hds-font-weight-medium, 500);
-  letter-spacing: var(--hds-letter-spacing-wide, 0.08em);
+  letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: var(--hds-color-muted, #6b7280);
+  color: var(--hds-color-muted, #938880);
   line-height: var(--hds-line-height-tight, 1.2);
 }

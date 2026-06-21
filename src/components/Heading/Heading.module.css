@@ -1,18 +1,25 @@
 .heading {
   margin: 0;
+  font-family: var(--hds-font-family, "Metropolis", Arial, sans-serif);
   font-weight: var(--hds-font-weight-bold, 700);
-  line-height: var(--hds-line-height-tight, 1.2);
-  color: var(--hds-color-strong, #1a1a1a);
+  line-height: var(--hds-line-height-heading, 1.4);
+  color: var(--hds-color-strong, #534c46);
 }
 
 .level1 {
-  font-size: var(--hds-font-size-2xl, 2.25rem);
+  font-size: var(--hds-font-size-2xl, 2.625rem);
 }
 
 .level2 {
-  font-size: var(--hds-font-size-xl, 1.75rem);
+  font-size: var(--hds-font-size-xl, 2.125rem);
 }
 
 .level3 {
-  font-size: var(--hds-font-size-lg, 1.25rem);
+  font-size: var(--hds-font-size-lg, 1.375rem);
+}
+
+/* Opt-in muted/hero treatment — live renders the hero H1 in greige.
+   The base default stays warm taupe (#534c46) to match live h2/h3. */
+.muted {
+  color: var(--hds-color-muted, #938880);
 }
