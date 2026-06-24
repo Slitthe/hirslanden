@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from '@storybook/react-vite'
-import { OptionCard } from './OptionCard'
-import { OptionGroup } from './OptionGroup'
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { OptionCard } from './OptionCard';
+import { OptionGroup } from './OptionGroup';
 
 const meta: Meta<typeof OptionGroup> = {
   title: 'Components/OptionGroup',
   component: OptionGroup,
   args: { label: 'Do you have a mole that is changing?' },
-}
+};
 
-export default meta
-type Story = StoryObj<typeof OptionGroup>
+export default meta;
+type Story = StoryObj<typeof OptionGroup>;
 
 export const WithDescriptions: Story = {
   render: (args) => (
@@ -27,7 +27,7 @@ export const WithDescriptions: Story = {
       />
     </OptionGroup>
   ),
-}
+};
 
 export const TitleOnly: Story = {
   render: (args) => (
@@ -36,7 +36,7 @@ export const TitleOnly: Story = {
       <OptionCard value="female" title="Female" />
     </OptionGroup>
   ),
-}
+};
 
 export const WithMedia: Story = {
   render: (args) => (
@@ -61,4 +61,4 @@ export const WithMedia: Story = {
       />
     </OptionGroup>
   ),
-}
+};

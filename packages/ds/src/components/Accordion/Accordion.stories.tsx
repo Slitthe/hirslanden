@@ -1,14 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/react-vite'
-import { Accordion } from './Accordion'
-import { AccordionItem } from './AccordionItem'
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Accordion } from './Accordion';
+import { AccordionItem } from './AccordionItem';
 
 const meta: Meta<typeof Accordion> = {
   title: 'Components/Accordion',
   component: Accordion,
-}
+};
 
-export default meta
-type Story = StoryObj<typeof Accordion>
+export default meta;
+type Story = StoryObj<typeof Accordion>;
 
 export const Faq: Story = {
   render: () => (
@@ -24,7 +24,7 @@ export const Faq: Story = {
       </AccordionItem>
     </Accordion>
   ),
-}
+};
 
 export const SingleOpen: Story = {
   render: () => (
@@ -37,4 +37,4 @@ export const SingleOpen: Story = {
       </AccordionItem>
     </Accordion>
   ),
-}
+};

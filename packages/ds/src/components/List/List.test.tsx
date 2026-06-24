@@ -1,5 +1,5 @@
-import { render, screen } from '@testing-library/react'
-import { List } from './List'
+import { render, screen } from '@testing-library/react';
+import { List } from './List';
 
 test('renders a list with its items', () => {
   render(
@@ -7,7 +7,7 @@ test('renders a list with its items', () => {
       <li>Limited mole count</li>
       <li>No atypical moles reported</li>
     </List>,
-  )
-  expect(screen.getByRole('list')).toBeInTheDocument()
-  expect(screen.getAllByRole('listitem')).toHaveLength(2)
-})
+  );
+  expect(screen.getByRole('list')).toBeInTheDocument();
+  expect(screen.getAllByRole('listitem')).toHaveLength(2);
+});

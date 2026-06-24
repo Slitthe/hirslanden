@@ -1,13 +1,13 @@
-import type { HTMLAttributes } from 'react'
-import { useCallback, useMemo, useState } from 'react'
-import styles from './Accordion.module.css'
-import { AccordionContext } from './context.js'
+import type { HTMLAttributes } from 'react';
+import { useCallback, useMemo, useState } from 'react';
+import styles from './Accordion.module.css';
+import { AccordionContext } from './context.js';
 
 export interface AccordionProps extends Omit<HTMLAttributes<HTMLDivElement>, 'onChange'> {
-  allowMultiple?: boolean
-  defaultOpen?: string[]
-  value?: string[]
-  onChange?: (openItems: string[]) => void
+  allowMultiple?: boolean;
+  defaultOpen?: string[];
+  value?: string[];
+  onChange?: (openItems: string[]) => void;
 }
 
 export function Accordion({
@@ -19,26 +19,26 @@ export function Accordion({
   children,
   ...rest
 }: AccordionProps) {
-  const isControlled = controlled !== undefined
-  const [uncontrolled, setUncontrolled] = useState<string[]>(defaultOpen)
-  const openItems = isControlled ? controlled : uncontrolled
+  const isControlled = controlled !== undefined;
+  const [uncontrolled, setUncontrolled] = useState<string[]>(defaultOpen);
+  const openItems = isControlled ? controlled : uncontrolled;
 
   const toggle = useCallback(
     (itemValue: string) => {
-      const isOpen = openItems.includes(itemValue)
-      let next: string[]
+      const isOpen = openItems.includes(itemValue);
+      let next: string[];
       if (isOpen) {
-        next = openItems.filter((v) => v !== itemValue)
+        next = openItems.filter((v) => v !== itemValue);
       } else {
-        next = allowMultiple ? [...openItems, itemValue] : [itemValue]
+        next = allowMultiple ? [...openItems, itemValue] : [itemValue];
       }
-      if (!isControlled) setUncontrolled(next)
-      onChange?.(next)
+      if (!isControlled) setUncontrolled(next);
+      onChange?.(next);
     },
     [openItems, allowMultiple, isControlled, onChange],
-  )
+  );
 
-  const contextValue = useMemo(() => ({ openItems, toggle }), [openItems, toggle])
+  const contextValue = useMemo(() => ({ openItems, toggle }), [openItems, toggle]);
 
   return (
     <AccordionContext.Provider value={contextValue}>
@@ -46,5 +46,5 @@ export function Accordion({
         {children}
       </div>
     </AccordionContext.Provider>
-  )
+  );
 }

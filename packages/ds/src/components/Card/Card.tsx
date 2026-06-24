@@ -1,10 +1,10 @@
-import type { ElementType, HTMLAttributes } from 'react'
-import styles from './Card.module.css'
+import type { ElementType, HTMLAttributes } from 'react';
+import styles from './Card.module.css';
 
 export interface CardProps extends HTMLAttributes<HTMLElement> {
-  as?: ElementType
-  variant?: 'solid' | 'dashed'
-  padding?: 'none' | 'sm' | 'md'
+  as?: ElementType;
+  variant?: 'solid' | 'dashed';
+  padding?: 'none' | 'sm' | 'md';
 }
 
 export function Card({
@@ -21,5 +21,5 @@ export function Card({
       className={[styles.card, className].filter(Boolean).join(' ')}
       {...rest}
     />
-  )
+  );
 }

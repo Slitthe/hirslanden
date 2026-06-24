@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.5",
+    "@storybook/addon-a11y": "^10.4.3",
     "@storybook/addon-docs": "^10.4.3",
     "@storybook/react-vite": "^10.4.3",
     "@tailwindcss/vite": "^4.0.0",

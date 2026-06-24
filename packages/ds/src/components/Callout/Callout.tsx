@@ -1,10 +1,10 @@
-import type { HTMLAttributes, ReactNode } from 'react'
-import styles from './Callout.module.css'
+import type { HTMLAttributes, ReactNode } from 'react';
+import styles from './Callout.module.css';
 
 export interface CalloutProps extends HTMLAttributes<HTMLDivElement> {
-  variant?: 'accent' | 'subtle'
-  action?: ReactNode
-  children: ReactNode
+  variant?: 'accent' | 'subtle';
+  action?: ReactNode;
+  children: ReactNode;
 }
 
 export function Callout({
@@ -23,5 +23,5 @@ export function Callout({
       <div className={styles.content}>{children}</div>
       {action ? <div className={styles.action}>{action}</div> : null}
     </div>
-  )
+  );
 }

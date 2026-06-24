@@ -1,12 +1,12 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vitest/config';
 
 const shared = {
   globals: true,
   environment: 'jsdom' as const,
   setupFiles: ['./tests/setup.ts'],
   include: ['src/**/*.test.tsx'],
-}
+};
 
 export default defineConfig({
   test: {
@@ -63,4 +63,4 @@ export default defineConfig({
       },
     ],
   },
-})
+});

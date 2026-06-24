@@ -1,21 +1,21 @@
-import type { ReactNode } from 'react'
-import { useId } from 'react'
-import { Icon } from '../Icon/index.js'
-import styles from './AccordionItem.module.css'
-import { useAccordion } from './context.js'
+import type { ReactNode } from 'react';
+import { useId } from 'react';
+import { Icon } from '../Icon/index.js';
+import styles from './AccordionItem.module.css';
+import { useAccordion } from './context.js';
 
 export interface AccordionItemProps {
-  value: string
-  title: ReactNode
-  children: ReactNode
-  disabled?: boolean
+  value: string;
+  title: ReactNode;
+  children: ReactNode;
+  disabled?: boolean;
 }
 
 export function AccordionItem({ value, title, children, disabled }: AccordionItemProps) {
-  const { openItems, toggle } = useAccordion()
-  const open = openItems.includes(value)
-  const headingId = useId()
-  const panelId = useId()
+  const { openItems, toggle } = useAccordion();
+  const open = openItems.includes(value);
+  const headingId = useId();
+  const panelId = useId();
 
   return (
     <div className={styles.item}>
@@ -37,5 +37,5 @@ export function AccordionItem({ value, title, children, disabled }: AccordionIte
         <div className={styles.panelInner}>{children}</div>
       </section>
     </div>
-  )
+  );
 }

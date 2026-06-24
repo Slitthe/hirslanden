@@ -19,5 +19,6 @@
     }
   },
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
-  "javascript": { "formatter": { "quoteStyle": "single", "semicolons": "asNeeded" } }
+  "javascript": { "formatter": { "quoteStyle": "single", "semicolons": "always" } },
+  "css": { "parser": { "tailwindDirectives": true } }
 }

@@ -1,18 +1,18 @@
-import { dirname, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
-import type { StorybookConfig } from '@storybook/react-vite'
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import type { StorybookConfig } from '@storybook/react-vite';
 
-const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.tsx'],
-  addons: ['@storybook/addon-docs'],
+  addons: ['@storybook/addon-docs', '@storybook/addon-a11y'],
   framework: {
     name: '@storybook/react-vite',
     options: {},
   },
   viteFinal: async (config) => {
-    const { mergeConfig } = await import('vite')
+    const { mergeConfig } = await import('vite');
     return mergeConfig(config, {
       resolve: {
         conditions: ['source'],
@@ -26,8 +26,8 @@ const config: StorybookConfig = {
         },
         dedupe: ['preact', 'preact/hooks', 'preact/compat'],
       },
-    })
+    });
   },
-}
+};
 
-export default config
+export default config;

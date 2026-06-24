@@ -1,11 +1,11 @@
-import type { HTMLAttributes, ReactNode } from 'react'
-import { Card } from '../Card/index.js'
-import { Overline } from '../Overline/index.js'
-import styles from './InfoCard.module.css'
+import type { HTMLAttributes, ReactNode } from 'react';
+import { Card } from '../Card/index.js';
+import { Overline } from '../Overline/index.js';
+import styles from './InfoCard.module.css';
 
 export interface InfoCardProps extends HTMLAttributes<HTMLDivElement> {
-  label: string
-  children: ReactNode
+  label: string;
+  children: ReactNode;
 }
 
 export function InfoCard({ label, children, className, ...rest }: InfoCardProps) {
@@ -18,5 +18,5 @@ export function InfoCard({ label, children, className, ...rest }: InfoCardProps)
       <Overline>{label}</Overline>
       <div className={styles.body}>{children}</div>
     </Card>
-  )
+  );
 }

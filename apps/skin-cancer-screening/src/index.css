@@ -1,1 +1,43 @@
 @import "tailwindcss";
+
+/*
+ * Map the design system's --hds-* tokens (defined in @hirslanden/ds/styles/tokens.css,
+ * imported at the app entry and in Storybook) into Tailwind's theme so they're
+ * usable as first-class utilities — e.g. bg-primary, text-muted, border-border,
+ * font-sans, text-lg, rounded-sm.
+ *
+ * `@theme inline` keeps the var() reference inside the generated utilities, so the
+ * single source of truth stays in tokens.css instead of being copied here.
+ */
+@theme inline {
+  /* Colours */
+  --color-primary: var(--hds-color-primary);
+  --color-primary-hover: var(--hds-color-primary-hover);
+  --color-primary-soft: var(--hds-color-primary-soft);
+  --color-on-primary: var(--hds-color-on-primary);
+  --color-text: var(--hds-color-text);
+  --color-strong: var(--hds-color-strong);
+  --color-muted: var(--hds-color-muted);
+  --color-bg: var(--hds-color-bg);
+  --color-border: var(--hds-color-border);
+  --color-border-dashed: var(--hds-color-border-dashed);
+  --color-track: var(--hds-color-track);
+  --color-surface-subtle: var(--hds-color-surface-subtle);
+  --color-accent-bar: var(--hds-color-accent-bar);
+
+  /* Typography. Brand type scale matches hirslanden.ch (md = 14px body base).
+     Prefer the DS Heading/Text components for headings and body; these utilities
+     cover ad-hoc text. */
+  --font-sans: var(--hds-font-family);
+  --text-xs: var(--hds-font-size-xs);
+  --text-sm: var(--hds-font-size-sm);
+  --text-md: var(--hds-font-size-md);
+  --text-lg: var(--hds-font-size-lg);
+  --text-xl: var(--hds-font-size-xl);
+  --text-2xl: var(--hds-font-size-2xl);
+
+  /* Radius (sharp/square brand) and elevation (flat) */
+  --radius-sm: var(--hds-radius-sm);
+  --radius-md: var(--hds-radius-md);
+  --shadow-card: var(--hds-shadow-card);
+}

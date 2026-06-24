@@ -1,15 +1,15 @@
-import type { ButtonHTMLAttributes, MouseEvent, ReactNode } from 'react'
-import { forwardRef } from 'react'
-import { useOptionGroup } from './context.js'
-import styles from './OptionCard.module.css'
+import type { ButtonHTMLAttributes, MouseEvent, ReactNode } from 'react';
+import { forwardRef } from 'react';
+import { useOptionGroup } from './context.js';
+import styles from './OptionCard.module.css';
 
 export interface OptionCardProps
   extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'value' | 'title'> {
-  value: string
-  title: ReactNode
-  description?: ReactNode
-  media?: ReactNode
-  selected?: boolean
+  value: string;
+  title: ReactNode;
+  description?: ReactNode;
+  media?: ReactNode;
+  selected?: boolean;
 }
 
 export const OptionCard = forwardRef<HTMLButtonElement, OptionCardProps>(function OptionCard(
@@ -26,15 +26,15 @@ export const OptionCard = forwardRef<HTMLButtonElement, OptionCardProps>(functio
   },
   ref,
 ) {
-  const group = useOptionGroup()
-  const inGroup = group !== null
-  const selected = inGroup ? group.value === value : Boolean(selectedProp)
-  const tabIndex = inGroup ? (group.rovingValue === value ? 0 : -1) : undefined
+  const group = useOptionGroup();
+  const inGroup = group !== null;
+  const selected = inGroup ? group.value === value : Boolean(selectedProp);
+  const tabIndex = inGroup ? (group.rovingValue === value ? 0 : -1) : undefined;
 
   function handleClick(event: MouseEvent<HTMLButtonElement>) {
-    onClick?.(event)
+    onClick?.(event);
     if (!event.defaultPrevented && inGroup && !disabled) {
-      group.select(value)
+      group.select(value);
     }
   }
 
@@ -60,5 +60,5 @@ export const OptionCard = forwardRef<HTMLButtonElement, OptionCardProps>(functio
         {description ? <span className={styles.description}>{description}</span> : null}
       </span>
     </button>
-  )
-})
+  );
+});

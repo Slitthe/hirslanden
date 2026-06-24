@@ -1,2 +1,2 @@
-export type { CalloutProps } from './Callout.js'
-export { Callout } from './Callout.js'
+export type { CalloutProps } from './Callout.js';
+export { Callout } from './Callout.js';

@@ -1,9 +1,9 @@
-import { dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-import preact from '@preact/preset-vite'
-import { defineConfig } from 'vitest/config'
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import preact from '@preact/preset-vite';
+import { defineConfig } from 'vitest/config';
 
-const rootDir = dirname(fileURLToPath(import.meta.url))
+const rootDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [preact()],
@@ -24,4 +24,4 @@ export default defineConfig({
     // instance and hooks lose their `currentComponent` wiring.
     server: { deps: { inline: ['@testing-library/preact'] } },
   },
-})
+});

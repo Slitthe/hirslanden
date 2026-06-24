@@ -1,11 +1,11 @@
-import type { HTMLAttributes } from 'react'
-import styles from './RiskScale.module.css'
+import type { HTMLAttributes } from 'react';
+import styles from './RiskScale.module.css';
 
 export interface RiskScaleProps extends HTMLAttributes<HTMLDivElement> {
-  title: string
-  value: string
-  segments: string[]
-  activeIndex: number
+  title: string;
+  value: string;
+  segments: string[];
+  activeIndex: number;
 }
 
 export function RiskScale({
@@ -39,5 +39,5 @@ export function RiskScale({
         ))}
       </div>
     </div>
-  )
+  );
 }

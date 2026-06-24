@@ -1,7 +1,7 @@
-import { type Locale, TranslationProvider } from '@root/src/i18n'
-import type { Preview } from '@storybook/react-vite'
-import '@hirslanden/ds/styles/tokens.css'
-import '@root/src/index.css'
+import { type Locale, TranslationProvider } from '@root/src/i18n';
+import type { Preview } from '@storybook/react-vite';
+import '@hirslanden/ds/styles/tokens.css';
+import '@root/src/index.css';
 
 const preview: Preview = {
   parameters: {
@@ -34,6 +34,6 @@ const preview: Preview = {
       </TranslationProvider>
     ),
   ],
-}
+};
 
-export default preview
+export default preview;

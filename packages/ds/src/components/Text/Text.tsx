@@ -1,10 +1,10 @@
-import type { HTMLAttributes } from 'react'
-import styles from './Text.module.css'
+import type { HTMLAttributes } from 'react';
+import styles from './Text.module.css';
 
 export interface TextProps extends HTMLAttributes<HTMLElement> {
-  as?: 'p' | 'span'
-  tone?: 'default' | 'muted'
-  size?: 'sm' | 'md'
+  as?: 'p' | 'span';
+  tone?: 'default' | 'muted';
+  size?: 'sm' | 'md';
 }
 
 export function Text({
@@ -21,5 +21,5 @@ export function Text({
       className={[styles.text, className].filter(Boolean).join(' ')}
       {...rest}
     />
-  )
+  );
 }

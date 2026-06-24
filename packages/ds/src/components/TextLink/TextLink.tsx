@@ -1,29 +1,29 @@
-import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode, Ref } from 'react'
-import { forwardRef } from 'react'
-import styles from './TextLink.module.css'
+import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode, Ref } from 'react';
+import { forwardRef } from 'react';
+import styles from './TextLink.module.css';
 
 interface BaseProps {
-  leadingIcon?: ReactNode
-  trailingIcon?: ReactNode
-  children: ReactNode
+  leadingIcon?: ReactNode;
+  trailingIcon?: ReactNode;
+  children: ReactNode;
 }
 
 export type TextLinkProps = BaseProps &
   (
     | ({ href: string } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, keyof BaseProps>)
     | ({ href?: undefined } & Omit<ButtonHTMLAttributes<HTMLButtonElement>, keyof BaseProps>)
-  )
+  );
 
 export const TextLink = forwardRef<HTMLAnchorElement | HTMLButtonElement, TextLinkProps>(
   function TextLink({ leadingIcon, trailingIcon, children, className, ...rest }, ref) {
-    const classes = [styles.link, className].filter(Boolean).join(' ')
+    const classes = [styles.link, className].filter(Boolean).join(' ');
     const inner = (
       <>
         {leadingIcon ? <span className={styles.icon}>{leadingIcon}</span> : null}
         <span>{children}</span>
         {trailingIcon ? <span className={styles.icon}>{trailingIcon}</span> : null}
       </>
-    )
+    );
 
     if (typeof (rest as { href?: string }).href === 'string') {
       return (
@@ -34,7 +34,7 @@ export const TextLink = forwardRef<HTMLAnchorElement | HTMLButtonElement, TextLi
         >
           {inner}
         </a>
-      )
+      );
     }
 
     return (
@@ -46,6 +46,6 @@ export const TextLink = forwardRef<HTMLAnchorElement | HTMLButtonElement, TextLi
       >
         {inner}
       </button>
-    )
+    );
   },
-)
+);

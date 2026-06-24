@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react-vite'
-import { List } from './List'
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { List } from './List';
 
 const meta: Meta<typeof List> = {
   title: 'Components/List',
   component: List,
-}
+};
 
-export default meta
-type Story = StoryObj<typeof List>
+export default meta;
+type Story = StoryObj<typeof List>;
 
 export const Default: Story = {
   render: () => (
@@ -17,4 +17,4 @@ export const Default: Story = {
       <li>No family history of melanoma</li>
     </List>
   ),
-}
+};
