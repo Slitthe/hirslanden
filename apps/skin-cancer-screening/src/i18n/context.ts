@@ -1,5 +1,5 @@
+import type { Locale } from '@root/src/i18n/bundles'
 import { createContext } from 'preact'
-import type { Locale } from './bundles'
 
 export interface TranslationContextValue {
   locale: Locale

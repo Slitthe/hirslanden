@@ -1,5 +1,5 @@
 import { Button } from '@hirslanden/ds/button'
-import { useTranslation } from './i18n'
+import { useTranslation } from '@root/src/i18n'
 
 export function App() {
   const { translate } = useTranslation()

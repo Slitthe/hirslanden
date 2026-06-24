@@ -1,4 +1,4 @@
-import { flatten } from './flatten'
+import { flatten } from '@root/src/i18n/flatten'
 
 test('keeps top-level string entries as-is', () => {
   expect(flatten({ ok: 'OK', cancel: 'Cancel' })).toEqual({ ok: 'OK', cancel: 'Cancel' })

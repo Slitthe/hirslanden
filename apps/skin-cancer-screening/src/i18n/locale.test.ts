@@ -1,10 +1,10 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
-import { extractTokens, generateTypesSource } from '../../scripts/gen-i18n.mjs'
-import de from '../locale/de.json'
-import en from '../locale/en.json'
-import fr from '../locale/fr.json'
-import { flatten } from './flatten'
+import { extractTokens, generateTypesSource } from '@root/scripts/gen-i18n.mjs'
+import { flatten } from '@root/src/i18n/flatten'
+import de from '@root/src/locale/de.json'
+import en from '@root/src/locale/en.json'
+import fr from '@root/src/locale/fr.json'
 
 const flats = { de: flatten(de), en: flatten(en), fr: flatten(fr) }
 const enKeys = Object.keys(flats.en).sort()

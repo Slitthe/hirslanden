@@ -1,7 +1,7 @@
-import de from '../locale/de.json'
-import en from '../locale/en.json'
-import fr from '../locale/fr.json'
-import { flatten } from './flatten'
+import { flatten } from '@root/src/i18n/flatten'
+import de from '@root/src/locale/de.json'
+import en from '@root/src/locale/en.json'
+import fr from '@root/src/locale/fr.json'
 
 /** Flattened message maps for every supported locale, keyed by dot-path. */
 export const BUNDLES = {

@@ -1,8 +1,8 @@
 import { render } from 'preact'
 import '@hirslanden/ds/styles/tokens.css'
-import './index.css'
-import { App } from './app'
-import { TranslationProvider } from './i18n'
+import '@root/src/index.css'
+import { App } from '@root/src/app'
+import { TranslationProvider } from '@root/src/i18n'
 
 const root = document.getElementById('app')
 if (root) {

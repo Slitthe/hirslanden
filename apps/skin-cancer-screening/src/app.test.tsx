@@ -1,6 +1,6 @@
+import { App } from '@root/src/app'
+import { TranslationProvider } from '@root/src/i18n'
 import { render, screen } from '@testing-library/preact'
-import { App } from './app'
-import { TranslationProvider } from './i18n'
 
 test('renders the localized title and start button for the active locale', () => {
   render(

@@ -1,8 +1,8 @@
+import type { Locale } from '@root/src/i18n/bundles'
+import { TranslationProvider } from '@root/src/i18n/TranslationProvider'
+import { type TranslationKey, useTranslation } from '@root/src/i18n/useTranslation'
 import { render, screen } from '@testing-library/preact'
 import type { ComponentChild } from 'preact'
-import type { Locale } from './bundles'
-import { TranslationProvider } from './TranslationProvider'
-import { type TranslationKey, useTranslation } from './useTranslation'
 
 function StartButtonLabel() {
   const { translate } = useTranslation()

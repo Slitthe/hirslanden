@@ -1,7 +1,7 @@
+import { BUNDLES, type Locale } from '@root/src/i18n/bundles'
+import { TranslationContext } from '@root/src/i18n/context'
 import type { ComponentChildren } from 'preact'
 import { useMemo } from 'preact/hooks'
-import { BUNDLES, type Locale } from './bundles'
-import { TranslationContext } from './context'
 
 export interface TranslationProviderProps {
   locale: Locale

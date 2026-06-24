@@ -1,4 +1,4 @@
-import { extractTokens, flattenKeys, generateTypesSource } from '../../scripts/gen-i18n.mjs'
+import { extractTokens, flattenKeys, generateTypesSource } from '@root/scripts/gen-i18n.mjs'
 
 test('extractTokens finds unique tokens in first-seen order', () => {
   expect(extractTokens('Hi {{name}}, you have {{count}} of {{name}}')).toEqual(['name', 'count'])

@@ -1,8 +1,8 @@
+import { BUNDLES, FALLBACK_LOCALE } from '@root/src/i18n/bundles'
+import { TranslationContext } from '@root/src/i18n/context'
+import type { Translations } from '@root/src/i18n/generated'
+import { interpolate } from '@root/src/i18n/interpolate'
 import { useContext } from 'preact/hooks'
-import { BUNDLES, FALLBACK_LOCALE } from './bundles'
-import { TranslationContext } from './context'
-import type { Translations } from './generated'
-import { interpolate } from './interpolate'
 
 export type TranslationKey = keyof Translations
 

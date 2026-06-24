@@ -7,7 +7,7 @@
  * Wrapped in a `use`-prefixed function so the `useTranslation` call satisfies the
  * rules of hooks; `translate` itself is a plain function.
  */
-import { useTranslation } from './useTranslation'
+import { useTranslation } from '@root/src/i18n/useTranslation'
 
 export function useTranslationTypeAssertions(cond: boolean) {
   const { translate } = useTranslation()

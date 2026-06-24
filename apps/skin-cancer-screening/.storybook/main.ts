@@ -1,4 +1,8 @@
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import type { StorybookConfig } from '@storybook/react-vite'
+
+const rootDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.tsx'],
@@ -13,6 +17,7 @@ const config: StorybookConfig = {
       resolve: {
         conditions: ['source'],
         alias: {
+          '@root': rootDir,
           react: 'preact/compat',
           'react-dom': 'preact/compat',
           'react/jsx-runtime': 'preact/compat/jsx-runtime',

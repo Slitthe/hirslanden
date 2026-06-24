@@ -1,9 +1,17 @@
+import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import preact from '@preact/preset-vite'
 import { defineConfig } from 'vitest/config'
+
+const rootDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [preact()],
   resolve: {
+    // "@root" -> the app root, so imports read `@root/src/...` and `@root/scripts/...`.
+    alias: {
+      '@root': rootDir,
+    },
     conditions: ['source', 'module', 'browser', 'development|production'],
   },
   test: {

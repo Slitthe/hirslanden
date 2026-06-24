@@ -1,4 +1,4 @@
-import { interpolate } from './interpolate'
+import { interpolate } from '@root/src/i18n/interpolate'
 
 test('returns the template unchanged when no params are given', () => {
   expect(interpolate('Hello {{name}}')).toBe('Hello {{name}}')
