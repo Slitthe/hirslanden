@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsxImportSource": "preact",
+    "customConditions": ["source"],
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"],
+      "react/jsx-runtime": ["./node_modules/preact/jsx-runtime"]
+    }
+  },
+  "include": ["src", "tests", "vite.config.ts", "vitest.config.ts", ".storybook"]
+}

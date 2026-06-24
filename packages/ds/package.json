@@ -1,0 +1,150 @@
+{
+  "name": "@hirslanden/ds",
+  "version": "0.0.0",
+  "description": "Hirslanden design system component library",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./accordion": {
+      "source": "./src/components/Accordion/index.ts",
+      "types": "./dist/components/Accordion/index.d.ts",
+      "import": "./dist/components/Accordion/index.js"
+    },
+    "./button": {
+      "source": "./src/components/Button/index.ts",
+      "types": "./dist/components/Button/index.d.ts",
+      "import": "./dist/components/Button/index.js"
+    },
+    "./callout": {
+      "source": "./src/components/Callout/index.ts",
+      "types": "./dist/components/Callout/index.d.ts",
+      "import": "./dist/components/Callout/index.js"
+    },
+    "./card": {
+      "source": "./src/components/Card/index.ts",
+      "types": "./dist/components/Card/index.d.ts",
+      "import": "./dist/components/Card/index.js"
+    },
+    "./divider": {
+      "source": "./src/components/Divider/index.ts",
+      "types": "./dist/components/Divider/index.d.ts",
+      "import": "./dist/components/Divider/index.js"
+    },
+    "./heading": {
+      "source": "./src/components/Heading/index.ts",
+      "types": "./dist/components/Heading/index.d.ts",
+      "import": "./dist/components/Heading/index.js"
+    },
+    "./icon": {
+      "source": "./src/components/Icon/index.ts",
+      "types": "./dist/components/Icon/index.d.ts",
+      "import": "./dist/components/Icon/index.js"
+    },
+    "./infocard": {
+      "source": "./src/components/InfoCard/index.ts",
+      "types": "./dist/components/InfoCard/index.d.ts",
+      "import": "./dist/components/InfoCard/index.js"
+    },
+    "./input": {
+      "source": "./src/components/Input/index.ts",
+      "types": "./dist/components/Input/index.d.ts",
+      "import": "./dist/components/Input/index.js"
+    },
+    "./list": {
+      "source": "./src/components/List/index.ts",
+      "types": "./dist/components/List/index.d.ts",
+      "import": "./dist/components/List/index.js"
+    },
+    "./optiongroup": {
+      "source": "./src/components/OptionGroup/index.ts",
+      "types": "./dist/components/OptionGroup/index.d.ts",
+      "import": "./dist/components/OptionGroup/index.js"
+    },
+    "./overline": {
+      "source": "./src/components/Overline/index.ts",
+      "types": "./dist/components/Overline/index.d.ts",
+      "import": "./dist/components/Overline/index.js"
+    },
+    "./riskscale": {
+      "source": "./src/components/RiskScale/index.ts",
+      "types": "./dist/components/RiskScale/index.d.ts",
+      "import": "./dist/components/RiskScale/index.js"
+    },
+    "./stepprogress": {
+      "source": "./src/components/StepProgress/index.ts",
+      "types": "./dist/components/StepProgress/index.d.ts",
+      "import": "./dist/components/StepProgress/index.js"
+    },
+    "./text": {
+      "source": "./src/components/Text/index.ts",
+      "types": "./dist/components/Text/index.d.ts",
+      "import": "./dist/components/Text/index.js"
+    },
+    "./textlink": {
+      "source": "./src/components/TextLink/index.ts",
+      "types": "./dist/components/TextLink/index.d.ts",
+      "import": "./dist/components/TextLink/index.js"
+    },
+    "./styles/tokens.css": {
+      "source": "./src/styles/tokens.css",
+      "default": "./dist/styles/tokens.css"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "vite build --mode lib && node scripts/copy-tokens.mjs",
+    "gen:exports": "node scripts/generate-exports.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "verify:pkg": "publint && attw --pack",
+    "verify:treeshake": "node scripts/verify-treeshake.mjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.3",
+    "@biomejs/biome": "^2.4.16",
+    "@storybook/addon-a11y": "^10.4.3",
+    "@storybook/addon-docs": "^10.4.3",
+    "@storybook/react-vite": "^10.4.3",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "esbuild": "^0.28.0",
+    "jsdom": "^29.1.1",
+    "lefthook": "^2.1.9",
+    "preact": "^10.29.2",
+    "publint": "^0.3.21",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "storybook": "^10.4.3",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vite-plugin-dts": "^5.0.2",
+    "vite-plugin-lib-inject-css": "^2.2.2",
+    "vitest": "^4.1.8"
+  }
+}

@@ -8,17 +8,21 @@ const components = dirents
   .sort()
 
 const exportsField = {
-  '.': { types: './dist/index.d.ts', import: './dist/index.js' },
+  '.': { source: './src/index.ts', types: './dist/index.d.ts', import: './dist/index.js' },
 }
 
 for (const name of components) {
   exportsField[`./${name.toLowerCase()}`] = {
+    source: `./src/components/${name}/index.ts`,
     types: `./dist/components/${name}/index.d.ts`,
     import: `./dist/components/${name}/index.js`,
   }
 }
 
-exportsField['./styles/tokens.css'] = './dist/styles/tokens.css'
+exportsField['./styles/tokens.css'] = {
+  source: './src/styles/tokens.css',
+  default: './dist/styles/tokens.css',
+}
 exportsField['./package.json'] = './package.json'
 
 const pkg = JSON.parse(await readFile('package.json', 'utf8'))
