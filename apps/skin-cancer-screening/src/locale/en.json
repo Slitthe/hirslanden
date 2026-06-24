@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Skin Cancer Screening"
+  },
+  "general": {
+    "buttons": {
+      "startCheck": "Start skin cancer check",
+      "ok": "OK"
+    },
+    "someInterpolatedValue": "The value is {{value}}"
+  }
+}

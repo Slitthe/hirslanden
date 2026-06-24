@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Hautkrebs-Vorsorge"
+  },
+  "general": {
+    "buttons": {
+      "startCheck": "Hautkrebs-Check starten",
+      "ok": "OK"
+    },
+    "someInterpolatedValue": "Der Wert ist {{value}}"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Dépistage du cancer de la peau"
+  },
+  "general": {
+    "buttons": {
+      "startCheck": "Démarrer le dépistage",
+      "ok": "OK"
+    },
+    "someInterpolatedValue": "La valeur est {{value}}"
+  }
+}
