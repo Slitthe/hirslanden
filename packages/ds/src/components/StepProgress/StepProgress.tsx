@@ -16,6 +16,7 @@ export function StepProgress({ current, total, label, className, ...rest }: Step
       <div
         className={styles.track}
         role="progressbar"
+        aria-label={text}
         aria-valuenow={current}
         aria-valuemin={0}
         aria-valuemax={total}

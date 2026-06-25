@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { useId } from 'react';
-import { Icon } from '../Icon/index.js';
+import { MinusIcon, PlusIcon } from '../Icon/index.js';
 import styles from './AccordionItem.module.css';
 import { useAccordion } from './context.js';
 
@@ -30,7 +30,7 @@ export function AccordionItem({ value, title, children, disabled }: AccordionIte
           onClick={() => toggle(value)}
         >
           <span className={styles.title}>{title}</span>
-          <Icon name={open ? 'minus' : 'plus'} />
+          {open ? <MinusIcon /> : <PlusIcon />}
         </button>
       </h3>
       <section id={panelId} aria-labelledby={headingId} hidden={!open}>

@@ -5,5 +5,15 @@ export interface Translations {
   'app.title': Record<never, never>
   'general.buttons.ok': Record<never, never>
   'general.buttons.startCheck': Record<never, never>
+  'general.progress.stepOf': { current: string | number; total: string | number }
   'general.someInterpolatedValue': { value: string | number }
+  'steps.warningSigns.back': Record<never, never>
+  'steps.warningSigns.options.no.description': Record<never, never>
+  'steps.warningSigns.options.no.title': Record<never, never>
+  'steps.warningSigns.options.unsure.description': Record<never, never>
+  'steps.warningSigns.options.unsure.title': Record<never, never>
+  'steps.warningSigns.options.yes.description': Record<never, never>
+  'steps.warningSigns.options.yes.title': Record<never, never>
+  'steps.warningSigns.overline': Record<never, never>
+  'steps.warningSigns.question': Record<never, never>
 }

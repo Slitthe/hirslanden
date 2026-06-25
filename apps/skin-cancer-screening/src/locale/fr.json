@@ -7,6 +7,30 @@
       "startCheck": "Démarrer le dépistage",
       "ok": "OK"
     },
-    "someInterpolatedValue": "La valeur est {{value}}"
+    "someInterpolatedValue": "La valeur est {{value}}",
+    "progress": {
+      "stepOf": "Étape {{current}} sur {{total}}"
+    }
+  },
+  "steps": {
+    "warningSigns": {
+      "overline": "Signes d'alerte",
+      "question": "Avez-vous un grain de beauté ou une tache cutanée qui est nouveau/nouvelle, grandit, change de forme ou de couleur, saigne ou ne cicatrise pas ?",
+      "options": {
+        "yes": {
+          "title": "Oui",
+          "description": "J'ai remarqué un changement ou une tache inhabituelle."
+        },
+        "no": {
+          "title": "Non",
+          "description": "Rien de nouveau ni de changeant que j'aie remarqué."
+        },
+        "unsure": {
+          "title": "Pas sûr·e",
+          "description": "J'ai peut-être remarqué quelque chose mais je n'en suis pas certain·e."
+        }
+      },
+      "back": "Retour"
+    }
   }
 }

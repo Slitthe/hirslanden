@@ -7,6 +7,30 @@
       "startCheck": "Hautkrebs-Check starten",
       "ok": "OK"
     },
-    "someInterpolatedValue": "Der Wert ist {{value}}"
+    "someInterpolatedValue": "Der Wert ist {{value}}",
+    "progress": {
+      "stepOf": "Schritt {{current}} von {{total}}"
+    }
+  },
+  "steps": {
+    "warningSigns": {
+      "overline": "Warnzeichen",
+      "question": "Haben Sie ein Muttermal oder einen Hautfleck, das/der neu ist, wächst, Form oder Farbe ändert, blutet oder nicht abheilt?",
+      "options": {
+        "yes": {
+          "title": "Ja",
+          "description": "Mir ist eine Veränderung oder ein ungewöhnlicher Fleck aufgefallen."
+        },
+        "no": {
+          "title": "Nein",
+          "description": "Nichts Neues oder Veränderliches, das mir aufgefallen ist."
+        },
+        "unsure": {
+          "title": "Nicht sicher",
+          "description": "Mir ist vielleicht etwas aufgefallen, aber ich bin nicht sicher."
+        }
+      },
+      "back": "Zurück"
+    }
   }
 }

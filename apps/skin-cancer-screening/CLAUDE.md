@@ -108,6 +108,23 @@ src/components/steps/[NameOfTheStep]/
 
 e.g. `src/components/steps/MoleCount/index.tsx` exporting `MoleCount`.
 
+**Steps are controlled-only.** A step never owns its own answer state — the
+parent flow does. Expose a `value` prop (optional; `undefined` = nothing selected
+yet) and an `onChange` callback, and drive the UI purely from `value`. Don't add a
+`defaultValue` prop or hold the answer in component-local `useState`; selection
+must follow the `value` the parent passes back. This keeps the parent the single
+source of truth for the assessment's answers.
+
+```tsx
+// Good — controlled-only
+export function MoleCount({ value, onChange }: MoleCountProps) {
+  return <OptionCard selected={value === MoleCountAnswer.Many} onClick={() => onChange?.(MoleCountAnswer.Many)} />;
+}
+
+// Avoid — internal answer state / uncontrolled fallback
+const [internal, setInternal] = useState(defaultValue);
+```
+
 ### Imports
 
 Use the `@root` path alias for intra-app imports instead of relative paths.
@@ -295,6 +312,17 @@ After any locale change, run `pnpm gen:i18n`, then `pnpm test` and `pnpm typeche
 
 `pnpm lint` (Biome) handles formatting and catches some of these (e.g. `any`, and
 the semicolons below); the rest are conventions to follow:
+
+- **Comments are a last resort.** The code is the source of truth, not the
+  comments — comments are redundant by default and tend to harden assumptions that
+  drift from the code. Reach first for **clearer naming**, **small helper functions
+  with descriptive names**, and **better file/directory organisation**; let those
+  carry the meaning a comment would. Comments aren't forbidden, but only write one
+  when the intent genuinely can't be expressed in code — e.g. *why* a non-obvious
+  choice was made, an external constraint, or a deliberate workaround. Never narrate
+  *what* the code does. (The one standing exception is the required JSDoc on
+  shared/scoped utils described above — that's documentation of a public API, not an
+  inline comment.)
 
 - **End every statement with a semicolon.** Biome is configured with
   `semicolons: "always"`, so `pnpm format` enforces this across the monorepo.

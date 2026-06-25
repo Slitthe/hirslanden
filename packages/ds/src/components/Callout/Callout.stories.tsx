@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Icon } from '../Icon/Icon';
+import { ArrowRightIcon } from '../Icon/index.js';
 import { TextLink } from '../TextLink/TextLink';
 import { Callout } from './Callout';
 
@@ -19,7 +19,7 @@ export const WithAction: Story = {
     variant: 'subtle',
     children: 'Want to check your moles? Use the ABCDE guide further down this page.',
     action: (
-      <TextLink href="#abcde" trailingIcon={<Icon name="arrow-right" />}>
+      <TextLink href="#abcde" trailingIcon={<ArrowRightIcon />}>
         ABCDE guide
       </TextLink>
     ),

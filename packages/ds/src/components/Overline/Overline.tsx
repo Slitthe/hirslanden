@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+import type { ElementType, HTMLAttributes } from 'react';
 import styles from './Overline.module.css';
 
 export interface OverlineProps extends HTMLAttributes<HTMLElement> {
@@ -6,5 +6,6 @@ export interface OverlineProps extends HTMLAttributes<HTMLElement> {
 }
 
 export function Overline({ as: Tag = 'span', className, ...rest }: OverlineProps) {
-  return <Tag className={[styles.overline, className].filter(Boolean).join(' ')} {...rest} />;
+  const Component = Tag as ElementType;
+  return <Component className={[styles.overline, className].filter(Boolean).join(' ')} {...rest} />;
 }

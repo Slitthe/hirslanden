@@ -12,8 +12,14 @@ export type { DividerProps } from './components/Divider/index.js';
 export { Divider } from './components/Divider/index.js';
 export type { HeadingProps } from './components/Heading/index.js';
 export { Heading } from './components/Heading/index.js';
-export type { IconName, IconProps } from './components/Icon/index.js';
-export { Icon } from './components/Icon/index.js';
+export type { IconProps } from './components/Icon/index.js';
+export {
+  ArrowDownIcon,
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  MinusIcon,
+  PlusIcon,
+} from './components/Icon/index.js';
 export type { InfoCardProps } from './components/InfoCard/index.js';
 export { InfoCard } from './components/InfoCard/index.js';
 export type { InputProps } from './components/Input/index.js';

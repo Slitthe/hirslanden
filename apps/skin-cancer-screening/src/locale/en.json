@@ -7,6 +7,30 @@
       "startCheck": "Start skin cancer check",
       "ok": "OK"
     },
-    "someInterpolatedValue": "The value is {{value}}"
+    "someInterpolatedValue": "The value is {{value}}",
+    "progress": {
+      "stepOf": "Step {{current}} of {{total}}"
+    }
+  },
+  "steps": {
+    "warningSigns": {
+      "overline": "Warning signs",
+      "question": "Do you have a mole or skin spot that is new, growing, changing shape or colour, bleeding, or not healing?",
+      "options": {
+        "yes": {
+          "title": "Yes",
+          "description": "I have noticed a change or unusual spot."
+        },
+        "no": {
+          "title": "No",
+          "description": "Nothing new or changing that I have noticed."
+        },
+        "unsure": {
+          "title": "Not sure",
+          "description": "I may have noticed something but I am not certain."
+        }
+      },
+      "back": "Back"
+    }
   }
 }

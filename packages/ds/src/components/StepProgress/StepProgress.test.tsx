@@ -14,6 +14,12 @@ test('exposes progressbar semantics', () => {
   expect(bar).toHaveAttribute('aria-valuemax', '14');
 });
 
+test('progressbar has an accessible name equal to the label text', () => {
+  render(<StepProgress current={1} total={14} />);
+  const bar = screen.getByRole('progressbar', { name: 'Step 1 of 14' });
+  expect(bar).toHaveAttribute('aria-label', 'Step 1 of 14');
+});
+
 test('accepts a custom label', () => {
   render(<StepProgress current={2} total={14} label="Halfway there" />);
   expect(screen.getByText('Halfway there')).toBeInTheDocument();
