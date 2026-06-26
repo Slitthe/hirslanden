@@ -38,7 +38,9 @@ export function WarningSigns({
       </div>
 
       <div class="mt-2" data-testid="warning-signs-question">
-        <Heading level={1}>{translate('steps.warningSigns.question')}</Heading>
+        <Heading level={1} className="text-lg!">
+          {translate('steps.warningSigns.question')}
+        </Heading>
       </div>
 
       <fieldset

@@ -7,6 +7,14 @@ export interface Translations {
   'general.buttons.startCheck': Record<never, never>
   'general.progress.stepOf': { current: string | number; total: string | number }
   'general.someInterpolatedValue': { value: string | number }
+  'steps.previousDiagnosis.back': Record<never, never>
+  'steps.previousDiagnosis.description': Record<never, never>
+  'steps.previousDiagnosis.options.no.description': Record<never, never>
+  'steps.previousDiagnosis.options.no.title': Record<never, never>
+  'steps.previousDiagnosis.options.yes.description': Record<never, never>
+  'steps.previousDiagnosis.options.yes.title': Record<never, never>
+  'steps.previousDiagnosis.overline': Record<never, never>
+  'steps.previousDiagnosis.question': Record<never, never>
   'steps.warningSigns.back': Record<never, never>
   'steps.warningSigns.options.no.description': Record<never, never>
   'steps.warningSigns.options.no.title': Record<never, never>

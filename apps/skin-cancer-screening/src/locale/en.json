@@ -31,6 +31,22 @@
         }
       },
       "back": "Back"
+    },
+    "previousDiagnosis": {
+      "overline": "Warning signs",
+      "question": "Have you previously been diagnosed with any form of skin cancer?",
+      "description": "Includes melanoma, basal cell carcinoma (BCC), squamous cell carcinoma (SCC), or any precancerous skin lesion removed by a doctor.",
+      "options": {
+        "yes": {
+          "title": "Yes",
+          "description": "I've been diagnosed with skin cancer or had a precancerous lesion removed."
+        },
+        "no": {
+          "title": "No",
+          "description": "I haven't been diagnosed with any form of skin cancer."
+        }
+      },
+      "back": "Back"
     }
   }
 }

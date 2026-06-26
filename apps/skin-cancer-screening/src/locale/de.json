@@ -31,6 +31,22 @@
         }
       },
       "back": "Zurück"
+    },
+    "previousDiagnosis": {
+      "overline": "Warnzeichen",
+      "question": "Wurde bei Ihnen jemals eine Form von Hautkrebs diagnostiziert?",
+      "description": "Dazu zählen Melanom, Basalzellkarzinom (BCC), Plattenepithelkarzinom (SCC) oder eine von einer Ärztin oder einem Arzt entfernte Hautkrebsvorstufe.",
+      "options": {
+        "yes": {
+          "title": "Ja",
+          "description": "Bei mir wurde Hautkrebs diagnostiziert oder eine Krebsvorstufe entfernt."
+        },
+        "no": {
+          "title": "Nein",
+          "description": "Bei mir wurde noch nie eine Form von Hautkrebs diagnostiziert."
+        }
+      },
+      "back": "Zurück"
     }
   }
 }

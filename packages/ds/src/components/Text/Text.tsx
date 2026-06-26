@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react';
+import type { ElementType, HTMLAttributes } from 'react';
 import styles from './Text.module.css';
 
 export interface TextProps extends HTMLAttributes<HTMLElement> {
@@ -14,8 +14,9 @@ export function Text({
   className,
   ...rest
 }: TextProps) {
+  const Component = Tag as ElementType;
   return (
-    <Tag
+    <Component
       data-tone={tone}
       data-size={size}
       className={[styles.text, className].filter(Boolean).join(' ')}

@@ -31,6 +31,22 @@
         }
       },
       "back": "Retour"
+    },
+    "previousDiagnosis": {
+      "overline": "Signes d'alerte",
+      "question": "Un cancer de la peau, quelle qu'en soit la forme, vous a-t-il déjà été diagnostiqué ?",
+      "description": "Cela inclut le mélanome, le carcinome basocellulaire (CBC), le carcinome épidermoïde (CE) ou toute lésion cutanée précancéreuse retirée par un médecin.",
+      "options": {
+        "yes": {
+          "title": "Oui",
+          "description": "On m'a diagnostiqué un cancer de la peau ou retiré une lésion précancéreuse."
+        },
+        "no": {
+          "title": "Non",
+          "description": "Aucune forme de cancer de la peau ne m'a été diagnostiquée."
+        }
+      },
+      "back": "Retour"
     }
   }
 }
