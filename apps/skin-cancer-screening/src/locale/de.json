@@ -47,6 +47,18 @@
         }
       },
       "back": "Zurück"
+    },
+    "age": {
+      "overline": "Zu Ihrer Person",
+      "question": "Wie alt sind Sie?",
+      "description": "Ihr Alter hilft, das Risiko einzuschätzen – die Häufigkeit von Hautkrebs steigt mit der über die Jahre angesammelten UV-Belastung.",
+      "label": "Alter",
+      "continue": "Weiter",
+      "back": "Zurück",
+      "underage": {
+        "label": "Hinweis zum Alter",
+        "body": "Diese Vorsorge ist für Erwachsene ab 18 Jahren gedacht. Wenn Sie noch nicht 18 sind und sich Sorgen um Ihre Haut machen, sprechen Sie bitte mit einem Elternteil, einer Bezugsperson oder einer Ärztin oder einem Arzt."
+      }
     }
   }
 }

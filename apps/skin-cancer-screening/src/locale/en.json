@@ -47,6 +47,18 @@
         }
       },
       "back": "Back"
+    },
+    "age": {
+      "overline": "About you",
+      "question": "How old are you?",
+      "description": "Your age helps calibrate risk — skin cancer incidence increases with cumulative UV exposure over time.",
+      "label": "Age",
+      "continue": "Continue",
+      "back": "Back",
+      "underage": {
+        "label": "A note on age",
+        "body": "This screening is designed for adults (18 or older). If you're under 18 and concerned about your skin, please talk to a parent, guardian, or doctor."
+      }
     }
   }
 }

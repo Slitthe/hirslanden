@@ -47,6 +47,18 @@
         }
       },
       "back": "Retour"
+    },
+    "age": {
+      "overline": "À propos de vous",
+      "question": "Quel âge avez-vous ?",
+      "description": "Votre âge aide à évaluer le risque — l'incidence du cancer de la peau augmente avec l'exposition cumulée aux UV au fil du temps.",
+      "label": "Âge",
+      "continue": "Continuer",
+      "back": "Retour",
+      "underage": {
+        "label": "Une remarque sur l'âge",
+        "body": "Ce dépistage est destiné aux adultes (18 ans ou plus). Si vous avez moins de 18 ans et que votre peau vous inquiète, parlez-en à un parent, à un adulte de confiance ou à un médecin."
+      }
     }
   }
 }

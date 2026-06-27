@@ -3,7 +3,7 @@ import { Card } from '../Card/index.js';
 import { Overline } from '../Overline/index.js';
 import styles from './InfoCard.module.css';
 
-export interface InfoCardProps extends HTMLAttributes<HTMLDivElement> {
+export interface InfoCardProps extends HTMLAttributes<HTMLElement> {
   label: string;
   children: ReactNode;
 }
